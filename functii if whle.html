@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+  var a = 10; //exercitiul 1
+  while (a >= 5)
+  console.log(a--)
+  </script>
+
+  <script>
+  var a = prompt("valoare 1"); //exercitiul 2
+  var b = prompt("valoare 2");
+  while (++a <= b)
+  console.log(a)
+  </script>
+
+  <script>
+  var a = +prompt("valoare 1"); //exercitiul 3
+  var b = +prompt("valoare 2");
+  if (a>=2 && b<=20){
+    while (a<=b){
+      (a++);
+    //var r;
+    if (!(a%2)) console.log(a);
+    else ;}}
+  else alert("nu va incadrati in diapazonul de la 2 ... 20")
+  </script>
+
+
+<script>
+var x=1;
+while ( x<5){
+var y=1;
+while( y<5){
+console.log(`${x} * ${y} = ${x*y}`)
+y++;}
+x++;}
+// ----------------
+for (var x=1; x<5; x++){
+	for(var y=1; y<5; y++){
+console.log(`${x} * ${y} = ${x*y}`)
+}}
+// ------------------------------------------
+var x=1;
+while ( x<5){
+  if (x==y){
+var y=1;
+while( y<5){
+console.log(`${x} * ${y} = ${x*y}`)
+y++;}}
+x++;}
+
+// --------------------------------------
+// triunghi
+for (var g = 0; g<=255; g++){
+  document.write(
+    `<div style="width:${g+1}px;height:1px;margin:auto;background:rgb(0, 256, 0)"></div>`);
+  };
+  for (var g<=255; g--){
+    document.write(
+      `<div style="width:${g-1}px;height:1px;margin:auto;background:rgb(0, 256, 0)"></div>`);
+    };
+
+</script>
+
+</body>
+</html>

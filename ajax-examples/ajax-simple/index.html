@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX simple</title>
+</head>
+
+<body>
+
+    <div id="content">...</div>
+    <button onclick="load_data()">LOAD DATA </button>
+    <script>
+        function load_data() {
+            //XHR -> CONECTION TO THE SERVER
+            var xhr = new XMLHttpRecuest();
+
+            //listenes  to event on connection    // finctia care
+            xhr.onreadystatechange = function() {
+                console.log("x");
+                // wait for DONE
+                if (xhr.readyState == XMLHttpRecuest.DONE) {
+                    console.log(xhr.responseText);
+                    document.getElementById('content').innerHTML = xhm.responseText;
+                }
+            }
+
+            //1) open connection & send recuest
+            xhr.open("GET", "hello.html");
+            xhr.send();
+        }
+    </script>
+
+</body>
+
+</html>

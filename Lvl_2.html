@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+var message = "Hi, how are you? :). Call me ;)!!!";
+var pattern = /\:\){1}/gi;
+var pattern2 = /\;\){1}/gi;
+
+var processed = message.replace(pattern,"***");
+var processed2 = processed.replace(pattern2,"*??*");
+
+console.log(processed, processed2);
+
+  </script>
+</body>
+</html>

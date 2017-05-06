@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>video-player</title>
+<link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="player-wrapper">
+
+  <h3>...</h3>
+
+  <video id = "player" width="400" height="300" poster="video/ppt2html5-video-1.gif"> <!--controls="controls" -->
+ <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+ <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
+ <source src="video/small.webm" type='video/webm; codecs="vp8, vorbis"'>
+ Тег video не поддерживается вашим браузером.
+ <a href="video/duel.mp4">Download file</a>.
+</video>
+<ul id ="controls">
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
+<ul id="playlist">
+  <li>
+    <h4><a href="url-of-video"></a></h4>
+    <img src="poster" alt="">
+  </li>
+
+</ul>
+</div>
+
+<!-- lazy loading js -->
+<script id="lazy"  >
+// defer-> exteren asteapta si apoi incarca, async->incarca o nesincron cu documentul
+  window.onload = function (){
+    var s = document.getElementById('lazy');
+    s.parentElement.removeChild( s );
+    s = document.createElement('script');
+    s.src = "index.js";
+    document.body.appendChild(s);
+  };
+</script>
+
+</body>
+</html>

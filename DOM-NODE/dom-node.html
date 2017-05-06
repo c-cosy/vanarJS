@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+</head>
+<body>
+  <!-- exemple of dom structure -->
+  <h1>Examle of <span>DOM</span> </h1>
+  <h2>DOM hierarchy</h2>
+<ul>
+  <li>Node</li>
+  <li>Element</li>
+  <li>HTMLElement</li>
+  <li><b>SPECIFIC</b>HTML</li>
+</ul>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, rem.
+</p>
+<script>
+  // 1) find and show <title> content
+  // 2) find and show coment
+  // 3) display the tag aroun "specific"
+  // 4) replace the word "DOM" in <span> with "Document Object Model"
+console.log( document.childNodes[1].childNodes[0].childNodes[3].childNodes[0].textContent );
+</script>
+
+</body>
+</html>

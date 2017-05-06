@@ -1,0 +1,14 @@
+body{
+  background-color: #000;
+}
+#map{
+  background-color: #555;
+  padding: 10px;
+  display: inline-block;
+  font-family: monospace;
+  line-height: 1.1em;
+  letter-spacing: 0.40em;
+}
+#character{
+  background-color: red;
+}
