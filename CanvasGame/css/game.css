@@ -1,0 +1,15 @@
+body {
+  background-color: #333;
+}
+
+canvas {
+  border: 10px solid black;
+}
+
+.btn_next {
+  background-color: green;
+  font-size: 20px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  display: flex;
+}
